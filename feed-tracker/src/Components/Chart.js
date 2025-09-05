@@ -12,3 +12,6 @@ const FoodTypeChart = ({ foodData }) => {
     foodData.forEach(item => {
       typeCounts[item.type] = (typeCounts[item.type] || 0) + 1;
     });
+
+     const labels = Object.keys(typeCounts);
+    const data = Object.values(typeCounts);
