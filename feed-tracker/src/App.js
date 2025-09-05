@@ -1,11 +1,9 @@
+import React, { useEffect, useState, useRef } from 'react';
+import L from "leaflet";
+import "leaflet/dist/leaflet.css";
+import FoodItem from './Components/FoodItem';
+import DonateForm from './Components/DonateForm';
+import NGOCard from './Components/NGOCard';
+import Chart from './Components/Chart';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Feed Tracker</h1>
-    </div>
-  );
-}
-
-export default App;
