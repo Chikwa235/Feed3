@@ -57,3 +57,9 @@ const DonateForm = () => {
         onChange={(e) => setEmail(e.target.value)}
         required
       />
+     <textarea
+        placeholder="Describe what you want to donate"
+        value={description}
+        onChange={(e) => setDescription(e.target.value)}
+        required
+      ></textarea>
