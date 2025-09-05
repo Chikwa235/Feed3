@@ -94,3 +94,8 @@ useEffect(() => {
   ).addTo(map);
 
   let isMounted = true; // Guard flag
+
+    // Function to safely set user location
+const setUserLocation = (lat, lng) => {
+  if (!isMounted) return;
+  map.setView([lat, lng], 15);
