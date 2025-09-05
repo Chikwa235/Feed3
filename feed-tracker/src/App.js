@@ -85,3 +85,12 @@ useEffect(() => {
     center: [-15.3875, 28.3228],
     zoom: 13,
   });
+    L.tileLayer(
+    "https://maps.geoapify.com/v1/tile/carto/{z}/{x}/{y}.png?&apiKey=d6a634c2a6464ced87bf6df192a6bf65",
+    {
+      attribution:
+        '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors © <a href="https://www.geoapify.com/">Geoapify</a>',
+    }
+  ).addTo(map);
+
+  let isMounted = true; // Guard flag
