@@ -197,3 +197,9 @@ body, html {
   padding: 0;
   height: 100%;
 }
+
+/* Map.css */
+.leaflet-container {
+  height: 100%; /* Ensure the map takes full height */
+  width: 100%; /* Ensure the map takes full width */
+}
