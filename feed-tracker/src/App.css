@@ -217,3 +217,10 @@ body, html {
   width: 41px; /* Adjust marker shadow size */
   height: 41px; /* Adjust marker shadow size */
 }
+
+/* Optional: Style for the map container */
+.map-container {
+  border-radius: 12px; /* Rounded corners for the map */
+  overflow: hidden; /* Prevent overflow */
+  margin-top: 1rem; /* Space above the map */
+}
