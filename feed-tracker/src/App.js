@@ -159,3 +159,16 @@ const setUserLocation = (lat, lng) => {
           addFoodItem(newItem);
           e.target.reset();
         }}>
+
+ <input type="text" name="foodName" placeholder="Food Name" required />
+          <input type="date" name="expiryDate" required />
+          <select name="foodType">
+            <option value="fruits">Fruits</option>
+            <option value="vegetables">Vegetables</option>
+            <option value="canned">Canned</option>
+            <option value="dry">Dry Goods</option>
+            <option value="leftovers">Leftovers</option>
+          </select>
+          <button type="submit">Add</button>
+        </form>
+      </header>
