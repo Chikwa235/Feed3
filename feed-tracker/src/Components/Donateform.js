@@ -50,3 +50,10 @@ const DonateForm = () => {
         onChange={(e) => setName(e.target.value)}
         required
       />
+     <input
+        type="email"
+        placeholder="Your Email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        required
+      />
