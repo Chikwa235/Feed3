@@ -56,3 +56,7 @@ const App = () => {
   const addFoodItem = (newItem) => {
     setFoodData(prev => [...prev, newItem]);
   };
+
+    const removeFoodItem = (index) => {
+    setFoodData(prev => prev.filter((_, i) => i !== index));
+  };
