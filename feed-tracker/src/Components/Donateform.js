@@ -18,3 +18,17 @@ const DonateForm = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(donationData),
       });
+
+           if (response.ok) {
+        alert("✅ Thank you! Your donation request has been submitted.");
+        setName("");
+        setEmail("");
+        setDescription("");
+      } else {
+        const errorData = await response.json();
+        setError(
+          errorData.message ||
+            "❌ There was an error submitting your donation request. Please try again."
+        );
+      }
+    }
