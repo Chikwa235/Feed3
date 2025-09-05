@@ -16,3 +16,11 @@ const App = () => {
   const [noResults, setNoResults] = useState(false);
 
     const mapRef = useRef(null); // Ref for the map container
+
+      // Update localStorage and calculate stats
+  useEffect(() => {
+    localStorage.setItem('foodData', JSON.stringify(foodData));
+    calculateMostWastedType();
+    setSavedItemsCount(foodData.filter(item => new Date(item.expiry) >= new Date()).length);
+    setFilteredFoodData(foodData);
+  }, [foodData]);
