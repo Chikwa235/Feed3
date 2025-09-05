@@ -126,3 +126,11 @@ body.dark-mode {
   background: var(--bg-dark);
   color: var(--text-light);
 }
+
+body.dark-mode header,
+body.dark-mode section,
+body.dark-mode footer {
+  background: var(--card-dark);
+  color: var(--text-light);
+  box-shadow: none;
+}
