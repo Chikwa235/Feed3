@@ -102,3 +102,12 @@ ul {
 .food-item[data-status="safe"] { border-left-color: #2ecc71; }
 .food-item[data-status="warning"] { border-left-color: #f39c12; }
 .food-item[data-status="danger"] { border-left-color: #e74c3c; }
+
+.ngo-card {
+  border: 1px solid var(--gray-border);
+  padding: 1.25rem;
+  margin: 0.75rem 0;
+  border-radius: 12px;
+  background: #eef9ff;
+  transition: box-shadow 0.3s ease;
+}
