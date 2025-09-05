@@ -68,3 +68,10 @@ const App = () => {
       setFilteredFoodData(foodData.filter(item => item.type === type));
     }
   };
+
+  const searchFoodItems = (query) => {
+  const lowerQuery = query.toLowerCase();
+  const results = foodData.filter(item => item.name.toLowerCase().includes(lowerQuery));
+  setFilteredFoodData(results);
+  setNoResults(results.length === 0); // <-- sets warning if no results
+};
