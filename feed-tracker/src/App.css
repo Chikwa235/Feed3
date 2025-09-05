@@ -173,3 +173,7 @@ body.dark-mode .ngo-card {
   font-weight: 600;
   transition: background 0.3s ease;
 }
+
+#darkToggleBtn:hover {
+  background: #b40324;
+}
