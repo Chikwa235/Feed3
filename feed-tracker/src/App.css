@@ -148,3 +148,8 @@ body.dark-mode .food-item {
   background: #2c2c2c;
   color: var(--text-light);
 }
+
+body.dark-mode .ngo-card {
+  background: #1a1a1a;
+  color: var(--text-light);
+}
