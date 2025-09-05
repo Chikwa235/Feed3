@@ -115,3 +115,9 @@ ul {
 .ngo-card:hover {
   box-shadow: 0 0 14px rgba(0, 150, 255, 0.2);
 }
+
+footer {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #777;
+}
