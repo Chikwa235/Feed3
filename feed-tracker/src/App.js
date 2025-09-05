@@ -182,3 +182,9 @@ const setUserLocation = (lat, lng) => {
         <button type="button" onClick={() => filterFoodItems('leftovers')}>🍽️ Leftovers</button>
       </section>
 
+<input
+  type="search"
+  id="searchBox"
+  placeholder="Search your food items..."
+  onInput={(e) => searchFoodItems(e.target.value)}
+/>
