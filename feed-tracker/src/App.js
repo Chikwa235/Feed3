@@ -115,3 +115,12 @@ const setUserLocation = (lat, lng) => {
   .bindPopup("You are here!")
   .openPopup();
 };
+
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const { latitude, longitude } = position.coords;
+        if (isMounted) {
+          setUserLocation(latitude, longitude);
+        }
+      },
