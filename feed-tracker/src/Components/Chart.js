@@ -20,3 +20,20 @@ const FoodTypeChart = ({ foodData }) => {
     if (chartInstanceRef.current) {
       chartInstanceRef.current.destroy();
     }
+
+     // Create a new chart instance
+    chartInstanceRef.current = new Chart(ctx, {
+      type: 'pie',
+      data: {
+        labels: labels.map(l => l.charAt(0).toUpperCase() + l.slice(1)),
+        datasets: [{
+          label: 'Food Type Distribution',
+          data,
+          backgroundColor: [
+            '#f39c12', '#2ecc71', '#3498db',
+            '#e74c3c', '#9b59b6', '#16a085'
+          ],
+          borderColor: '#fff',
+          borderWidth: 2,
+        }],
+      },
