@@ -86,3 +86,15 @@ ul {
   list-style: none;
   padding: 0;
 }
+
+.food-item {
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  border-left: 8px solid var(--gray-border);
+  border-radius: 12px;
+  background: #f7f7f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
