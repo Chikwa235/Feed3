@@ -121,3 +121,8 @@ footer {
   font-size: 0.95rem;
   color: #777;
 }
+
+body.dark-mode {
+  background: var(--bg-dark);
+  color: var(--text-light);
+}
