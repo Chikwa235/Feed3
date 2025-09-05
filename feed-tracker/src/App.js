@@ -14,3 +14,5 @@ const App = () => {
   const [savedItemsCount, setSavedItemsCount] = useState(0);
   const [filteredFoodData, setFilteredFoodData] = useState(foodData);
   const [noResults, setNoResults] = useState(false);
+
+    const mapRef = useRef(null); // Ref for the map container
