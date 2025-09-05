@@ -212,3 +212,8 @@ body, html {
   width: 25px; /* Adjust marker icon size */
   height: 41px; /* Adjust marker icon size */
 }
+
+.leaflet-marker-shadow {
+  width: 41px; /* Adjust marker shadow size */
+  height: 41px; /* Adjust marker shadow size */
+}
