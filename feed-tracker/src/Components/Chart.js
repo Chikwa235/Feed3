@@ -15,3 +15,8 @@ const FoodTypeChart = ({ foodData }) => {
 
      const labels = Object.keys(typeCounts);
     const data = Object.values(typeCounts);
+
+     // Destroy the previous chart instance if it exists
+    if (chartInstanceRef.current) {
+      chartInstanceRef.current.destroy();
+    }
