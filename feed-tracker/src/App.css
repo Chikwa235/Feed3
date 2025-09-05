@@ -153,3 +153,10 @@ body.dark-mode .ngo-card {
   background: #1a1a1a;
   color: var(--text-light);
 }
+
+.header-top-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
