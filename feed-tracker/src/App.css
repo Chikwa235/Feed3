@@ -11,3 +11,9 @@
   --card-dark: #1e1e1e;
   --border-dark: #333;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
