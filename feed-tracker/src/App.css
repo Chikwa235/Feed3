@@ -186,3 +186,8 @@ body.dark-mode .ngo-card {
   display: block;
   margin: 0 auto;
 }
+
+#map {
+  height: 100vh;   /* full viewport height */
+  width: 100%;     /* full width */
+}
