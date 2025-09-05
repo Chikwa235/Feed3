@@ -160,3 +160,16 @@ body.dark-mode .ngo-card {
   align-items: center;
   margin-bottom: 1rem;
 }
+
+#darkToggleBtn {
+  background: var(--primary);
+  margin: 0.5rem 0; /* Add margin for spacing */
+  border-radius: 8px;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
