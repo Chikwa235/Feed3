@@ -63,3 +63,11 @@ const DonateForm = () => {
         onChange={(e) => setDescription(e.target.value)}
         required
       ></textarea>
+
+ <button type="submit">Submit</button>
+      {error && <p style={{ color: "red" }}>{error}</p>}
+    </form>
+  );
+};
+
+export default DonateForm;
