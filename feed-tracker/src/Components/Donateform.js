@@ -32,3 +32,11 @@ const DonateForm = () => {
         );
       }
     }
+
+     catch (error) {
+      console.error("Error:", error);
+      setError(
+        "❌ There was an error submitting your donation request. Please try again."
+      );
+    }
+  };
