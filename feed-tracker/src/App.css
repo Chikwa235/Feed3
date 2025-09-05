@@ -207,3 +207,8 @@ body, html {
 .leaflet-popup {
   font-size: 14px; /* Adjust popup font size */
 }
+
+.leaflet-marker-icon {
+  width: 25px; /* Adjust marker icon size */
+  height: 41px; /* Adjust marker icon size */
+}
