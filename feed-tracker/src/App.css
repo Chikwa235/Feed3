@@ -111,3 +111,7 @@ ul {
   background: #eef9ff;
   transition: box-shadow 0.3s ease;
 }
+
+.ngo-card:hover {
+  box-shadow: 0 0 14px rgba(0, 150, 255, 0.2);
+}
