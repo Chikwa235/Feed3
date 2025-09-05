@@ -172,3 +172,13 @@ const setUserLocation = (lat, lng) => {
           <button type="submit">Add</button>
         </form>
       </header>
+
+ <section className="filters">
+        <button type="button" onClick={() => filterFoodItems('all')}>📦 All</button>
+        <button type="button" onClick={() => filterFoodItems('fruits')}>🍎 Fruits</button>
+        <button type="button" onClick={() => filterFoodItems('vegetables')}>🥦 Vegetables</button>
+        <button type="button" onClick={() => filterFoodItems('canned')}>🥫 Canned</button>
+        <button type="button" onClick={() => filterFoodItems('dry')}>🍞 Dry Goods</button>
+        <button type="button" onClick={() => filterFoodItems('leftovers')}>🍽️ Leftovers</button>
+      </section>
+
