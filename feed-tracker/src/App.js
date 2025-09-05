@@ -24,3 +24,15 @@ const App = () => {
     setSavedItemsCount(foodData.filter(item => new Date(item.expiry) >= new Date()).length);
     setFilteredFoodData(foodData);
   }, [foodData]);
+
+    const calculateMostWastedType = () => {
+    const now = new Date();
+    const counts = {};
+    foodData.forEach(item => {
+      if (new Date(item.expiry) < now) {
+        counts[item.type] = (counts[item.type] || 0) + 1;
+      }
+    });
+    const maxType = Object.keys(counts).reduce((a, b) => counts[a] > counts[b] ? a : b, 'None');
+    setMostWasted(maxType.charAt(0).toUpperCase() + maxType.slice(1));
+  };
