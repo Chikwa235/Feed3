@@ -233,3 +233,10 @@ const setUserLocation = (lat, lng) => {
         <NGOCard name="FoodBank Zambia" email="info@givedirectly.org" website="https://www.givedirectly.org/covid-19/africa/#zambia" />
         <NGOCard name="Feeding America" email="info@feedingamerica.org" website="https://www.feedingamerica.org" />
       </section>
+
+         <footer>&copy; 2025 FEED App | Built with 💡 by Chisapa</footer>
+    </div>
+  );
+};
+
+export default App;
