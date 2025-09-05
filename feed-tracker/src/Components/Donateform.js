@@ -11,3 +11,10 @@ const DonateForm = () => {
     setError(""); // Reset error message
 
     const donationData = { name, email, description };
+
+      try {
+      const response = await fetch("http://localhost:5000/api/donations", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(donationData),
+      });
