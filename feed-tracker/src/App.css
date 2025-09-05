@@ -203,3 +203,7 @@ body, html {
   height: 100%; /* Ensure the map takes full height */
   width: 100%; /* Ensure the map takes full width */
 }
+
+.leaflet-popup {
+  font-size: 14px; /* Adjust popup font size */
+}
