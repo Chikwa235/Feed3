@@ -35,3 +35,11 @@ header, section, footer {
   box-shadow: var(--shadow);
   transition: background 0.3s ease;
 }
+
+h1, h2 {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
