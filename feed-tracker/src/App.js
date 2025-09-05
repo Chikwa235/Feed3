@@ -7,3 +7,10 @@ import NGOCard from './Components/NGOCard';
 import Chart from './Components/Chart';
 import './App.css';
 
+const App = () => {
+  const [foodData, setFoodData] = useState(JSON.parse(localStorage.getItem('foodData')) || []);
+  const [darkMode, setDarkMode] = useState(localStorage.getItem('darkMode') === 'true');
+  const [mostWasted, setMostWasted] = useState('Calculating...');
+  const [savedItemsCount, setSavedItemsCount] = useState(0);
+  const [filteredFoodData, setFilteredFoodData] = useState(foodData);
+  const [noResults, setNoResults] = useState(false);
