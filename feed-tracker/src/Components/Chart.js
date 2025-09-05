@@ -37,3 +37,12 @@ const FoodTypeChart = ({ foodData }) => {
           borderWidth: 2,
         }],
       },
+
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'bottom' },
+          title: { display: true, text: 'Food Type Distribution' },
+        },
+      },
+    });
