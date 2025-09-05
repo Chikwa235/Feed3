@@ -43,3 +43,10 @@ h1, h2 {
   font-weight: 700;
   letter-spacing: 0.5px;
 }
+
+form, .filters, .stats-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
