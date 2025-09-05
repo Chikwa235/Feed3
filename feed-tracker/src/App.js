@@ -147,3 +147,15 @@ const setUserLocation = (lat, lng) => {
             {darkMode ? '☀️ Disable Dark Mode' : '🌙 Enable Dark Mode'}
           </button>
         </div>
+
+ <form id="foodForm" onSubmit={(e) => {
+          e.preventDefault();
+          const formData = new FormData(e.target);
+          const newItem = {
+            name: formData.get('foodName'),
+            expiry: formData.get('expiryDate'),
+            type: formData.get('foodType'),
+          };
+          addFoodItem(newItem);
+          e.target.reset();
+        }}>
