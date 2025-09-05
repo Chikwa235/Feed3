@@ -81,3 +81,8 @@ button:hover {
   background: #1a1c33;
   transform: scale(1.02);
 }
+
+ul {
+  list-style: none;
+  padding: 0;
+}
