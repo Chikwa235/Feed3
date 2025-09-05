@@ -50,3 +50,11 @@ form, .filters, .stats-grid {
   gap: 1rem;
   justify-content: center;
 }
+
+input, select, button, textarea {
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--gray-border);
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
