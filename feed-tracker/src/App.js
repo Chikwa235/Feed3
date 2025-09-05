@@ -75,3 +75,13 @@ const App = () => {
   setFilteredFoodData(results);
   setNoResults(results.length === 0); // <-- sets warning if no results
 };
+
+
+useEffect(() => {
+  if (!mapRef.current) return;
+
+  // Initialize map
+  const map = L.map(mapRef.current, {
+    center: [-15.3875, 28.3228],
+    zoom: 13,
+  });
