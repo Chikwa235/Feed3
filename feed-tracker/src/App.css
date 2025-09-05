@@ -134,3 +134,11 @@ body.dark-mode footer {
   color: var(--text-light);
   box-shadow: none;
 }
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+  background: #1e1e1e;
+  color: #eee;
+  border: 1px solid var(--border-dark);
+}
