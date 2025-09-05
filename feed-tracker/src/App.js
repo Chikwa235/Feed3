@@ -194,3 +194,15 @@ const setUserLocation = (lat, lng) => {
     ⚠️ No matching food items found!
   </p>
 )}
+
+ <section>
+        <h2>Your Food Items</h2>
+        <ul id="foodItems">
+          {filteredFoodData.map((item, index) => (
+            <FoodItem key={index} item={item} index={index} removeFoodItem={removeFoodItem} />
+          ))}
+        </ul>
+        <p><strong>Saved Items:</strong> <span>{savedItemsCount}</span></p>
+        <p>Most Wasted Food Type: <span>{mostWasted}</span></p>
+        <Chart foodData={filteredFoodData} />
+      </section>
