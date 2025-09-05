@@ -60,3 +60,11 @@ const App = () => {
     const removeFoodItem = (index) => {
     setFoodData(prev => prev.filter((_, i) => i !== index));
   };
+
+    const filterFoodItems = (type) => {
+    if (type === 'all') {
+      setFilteredFoodData(foodData);
+    } else {
+      setFilteredFoodData(foodData.filter(item => item.type === type));
+    }
+  };
