@@ -28,3 +28,11 @@ const Donation = mongoose.model('Donation', donationSchema);
 // API endpoint to handle donations
 app.post('/api/donations', async (req, res) => {
   const { name, email, description } = req.body;
+    try {
+    const newDonation = new Donation({ name, email, description });
+    await newDonation.save();
+    res.status(201).json({ message: 'Donation submitted successfully!' });
+  } catch (error) {
+    res.status(500).json({ message: 'Error submitting donation', error });
+  }
+});
