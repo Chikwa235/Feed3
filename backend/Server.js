@@ -22,3 +22,5 @@ const donationSchema = new mongoose.Schema({
   email: String,
   description: String,
 });
+
+const Donation = mongoose.model('Donation', donationSchema);
