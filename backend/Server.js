@@ -15,3 +15,10 @@ app.use(bodyParser.json());
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.error('MongoDB connection error:', err));
+
+  // Define a Donation model
+const donationSchema = new mongoose.Schema({
+  name: String,
+  email: String,
+  description: String,
+});
