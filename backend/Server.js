@@ -24,3 +24,7 @@ const donationSchema = new mongoose.Schema({
 });
 
 const Donation = mongoose.model('Donation', donationSchema);
+
+// API endpoint to handle donations
+app.post('/api/donations', async (req, res) => {
+  const { name, email, description } = req.body;
